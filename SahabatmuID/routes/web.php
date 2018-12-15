@@ -12,5 +12,14 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('main');
 });
+
+// Food
+Route::get('/food', 'FoodController@index');
+
+//Destination
+Route::get('/destination', 'DestinationController@index');
+
+//Transportation
+Route::get('/transportation', 'TransportationController@index');
