@@ -23,3 +23,19 @@ Route::get('/destination', 'DestinationController@index');
 
 //Transportation
 Route::get('/transportation', 'TransportationController@index');
+
+Auth::routes();
+
+Route::get('/dashboard', 'DashboardController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
